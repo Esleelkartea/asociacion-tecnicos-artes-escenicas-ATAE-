@@ -1,0 +1,670 @@
+/*
+	Proyecto: canvas para documentos
+	Version: 1.0
+	Author: David Calvo
+	Author URI: www.digital5.es
+*/
+
+/* PANELES */
+.panel-error {
+	background-color: #FFB4B4;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  border-top: 1px solid #F5001D;
+  border-bottom: 1px solid #F5001D;
+	width: 1020px;
+	text-align: center;
+	
+}
+
+.panel-error p {
+	margin: 0;
+	padding-left: 8px;
+	line-height: 18px;
+	font-family:Arial,Helvetica; 
+  font-size: 12px; 
+	font-weight: 300;
+	color:#F5001D;
+}
+
+.panel-aviso {
+	background-color: #B0C4DE;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  border-top: 1px solid #4682B4;
+  border-bottom: 1px solid #4682B4;
+	width: 1020px;
+	text-align: center;
+	
+}
+
+.panel-aviso p {
+	margin: 0;
+	padding-left: 8px;
+	line-height: 18px;
+	font-family:Arial,Helvetica; 
+  font-size: 12px; 
+	font-weight: 300;
+	color:#4682B4;
+}
+
+/* LISTADO */
+.ventana-pagina {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+	border-top: 1px solid #E3E3E3;
+	border-bottom: 1px solid #FFFFFF;
+	width: 960px;
+	
+}
+
+.titulo-pagina {
+	background-color:#F1F1F1;
+	margin: 0px;
+	padding: 0px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #E3E3E3;
+	height: 20px;
+	width: 960px;
+	
+}
+
+.titulo-pagina p {
+	margin: 0;
+	padding-left: 5px;
+	height: 20px;
+	line-height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #3F3F3F;
+	
+}
+
+.icono-titulo-pagina {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-right: 4px;
+	padding: 0px;
+	border-left: 1px solid #E3E3E3;
+	height: 18px;
+	width: 18px;
+	float: right;
+	
+}
+
+.paginacion {
+	margin-right: 5px;
+	padding: 0;
+	height: 20px;
+	width: 200px;
+	line-height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000000;
+	text-align: right;
+	float: right;
+}
+
+.listado {
+	margin-top: 5px;
+	padding: 0;
+	
+}
+
+table.tabla-cabecera {
+	margin: 0;
+	padding: 0;
+	width: 960px;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+	height: 20px;
+}
+
+td.cabecera {
+	background-color: #8C8C8C;
+	
+}
+
+td.cabecera p {
+	margin: 0;
+	padding-left: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 20px;
+}
+
+table.tabla-contenido {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+td.row-impar {
+	background-color: #FFFFFF;
+	
+}
+
+td.row-impar p {
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #3F3F3F;
+  line-height: 20px;
+}
+
+td.row-par {
+	background-color: #E3E3E3;
+	
+}
+
+td.row-par p {
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #3F3F3F;
+  line-height: 20px;
+}
+
+.centrado {
+	text-align: center;
+}
+
+.botonera-row {
+	margin: 0;
+	margin-right: 2px;
+	padding: 0px;
+	padding-top: 5px;
+	float: right;
+}
+
+.botonera-row  a {text-decoration:none; cursor:pointer;}
+
+.oculto {
+	display: none;
+}
+
+.no-oculto {
+	display: block;
+}
+
+/* CAMPOS */
+fieldset {
+	background-color: #F9F9F9;
+	margin-bottom: 5px;
+	padding: 3px;
+	border: 1px solid #E3E3E3;
+	width: 98%;
+}
+
+fieldset legend {
+	/*background-color: #CCA383;*/
+	padding: 6px;
+	font-weight: bold;
+	color: 3F3F3F;
+	
+}
+
+fieldset label {
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	width: 180px;
+	line-height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #3F3F3F;
+	
+}
+
+.bloque-campo {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 4px;
+	
+}
+
+.bloque-campo:hover {
+	background-color: #FFFFFF;
+}
+
+.campo-titulo {
+	margin: 0;
+	padding: 0;
+	/*border-bottom: 1px solid #E3E3E3;*/
+	height: 20px;
+	width: 180px;
+	line-height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #3F3F3F;
+	float: left;
+	
+}
+
+.campo-valor {
+	margin-left: 186px;
+	margin-right: 6px;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #3F3F3F;
+	
+}
+
+input.texto {
+	padding-left: 2px;
+	height:20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	color:#000000;
+	
+}
+
+input.info {
+	padding-left: 2px;
+	height:20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	color:#666666;
+	
+}
+
+input.obligatorio {
+	padding-left: 2px;
+	border-left: 1px solid;
+  border-top: 1px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid; 
+	height:20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	color:#666666;
+	
+}
+
+select.elige{
+	margin-right:1px;
+	padding-left: 2px;
+	padding-right: 1px;
+	border-left: 1px solid #DFDFDF;
+  border-top: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+	height: 20px;
+	font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  text-align:left;
+  color:#000000;
+}
+
+input.caja{
+	background-color:#EDEDED;
+	border-left: 1px solid #DFDFDF;
+  border-top: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+	height:12px;
+  width:12px;
+}
+
+textarea {
+	padding-left: 2px;
+	line-height:20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	color:#000000;
+}
+
+textarea.obligatorio {
+	border-left: 1px solid #DFDFDF;
+  border-top: 1px solid #DFDFDF;
+  border-right: 2px solid #DFDFDF;
+  border-bottom: 2px solid #DFDFDF;
+}
+
+.botonera {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 4px;
+	border-top: 1px solid #E3E3E3;
+	height: 22px;
+	text-align: right;
+	
+}
+
+input.boton {
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	height: 20px;
+	line-height: 20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	
+	color:#3F3F3F;
+	
+}
+
+/* PÁGINA */
+
+/* CUADRO DE MANDO */
+#cuadro-mando {
+	margin: 0;
+	padding: 0;
+	width: 80mm; 
+	float: left;
+}
+
+#tabs {
+}
+
+#tabs li a {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 300;
+	color: #3F3F3F;
+}
+
+#tabs-documento {
+	margin: 0;
+	padding: 0;
+}
+
+#tabs-pagina {
+	margin: 0;
+	padding: 0;
+}
+
+#tabs-detalle {
+	margin: 0;
+	padding: 0;
+}
+
+#tabs-contenido {
+	margin: 0;
+	padding: 0;
+}
+
+.seccion-titulo {
+	margin-top: 4px;
+	padding: 0;
+	border-bottom: 1px solid #999999;
+	height: 18px;
+	
+}
+
+.seccion-titulo p {
+	margin: 0;
+	padding: 0;
+	padding-left: 4px;
+	line-height: 18px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #3F3F3F;
+	
+}
+
+.seccion-tabla {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding: 0;
+	
+}
+
+.seccion-tabla table {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #999999;
+	border-left: 1px solid #999999;
+	width: 76mm;
+	
+}
+
+.seccion-tabla table td {
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	height: 18px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #3F3F3F;
+	
+}
+
+.seccion-tabla table td p{
+	margin: 0;
+	padding: 0;
+	padding-left: 4px;
+	line-height: 11px;
+	font-family: Times, Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	color: #3F3F3F;
+	
+}
+
+.seccion-tabla table td a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	
+}
+
+.seccion-tabla input.texto {
+	margin: 0;
+	margin-top: 2px;
+	margin-left: 4px;
+	padding-left: 2px;
+	height:18px;
+	line-height: 18px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	font-weight: 300;
+	color:#000000;
+	
+}
+
+.seccion-tabla input.info {
+	background-color: #EFEFEF;
+	margin-top: 2px;
+	margin-left: 4px;
+	padding-left: 2px;
+	height:18px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	font-weight: 300;
+	color:#666666;
+	
+}
+
+.seccion-tabla input.float {
+	background-color: #F1F9AE;
+	margin: 0;
+	margin-top: 2px;
+	margin-left: 4px;
+	padding-right: 2px;
+	height:18px;
+	line-height: 18px;
+	text-align: right;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	font-weight: 300;
+	color:#3C91D3;
+	
+}
+
+.seccion-tabla input.int {
+	background-color: #F0FFF0;
+	margin: 0;
+	margin-top: 2px;
+	margin-left: 4px;
+	padding-right: 2px;
+	height:18px;
+	line-height: 18px;
+	text-align: right;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	font-weight: 300;
+	color:#009900;
+	
+}
+
+.seccion-tabla input.comando {
+	margin-top: 2px;
+	margin-left: 4px;
+	background-color: #000099;
+	border-left: 2px solid #999999;
+  border-top: 2px solid #999999;
+  border-right: 2px solid #999999;
+  border-bottom: 2px solid #999999; 
+	text-align: right;
+	color: #ECFA70;
+	
+}
+
+.seccion-tabla textarea {
+	margin-top: 2px;
+	margin-left: 4px;
+	padding-left: 2px;
+	line-height: 20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	font-weight: 300;
+	color:#000000;
+	
+}
+
+.seccion-tabla select {
+	background-color: #EFEFEF;
+	margin: 0;
+	margin-top: 2px;
+	margin-left: 4px;
+	padding: 0;
+	border-left: 1px solid #3F3F3F;
+  border-top: 1px solid #3F3F3F;
+  border-right: 1px solid #3F3F3F;
+  border-bottom: 1px solid #3F3F3F; 
+	height:20px;
+	line-height: 20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	font-weight: 300;
+	color:#3F3F3F;
+}
+
+.seccion-tabla input.file {
+	background-color: #EFEFEF;
+	margin: 0;
+	margin-top: 2px;
+	margin-left: 4px;
+	padding: 0;
+	border-left: 1px solid #3F3F3F;
+  border-top: 1px solid #3F3F3F;
+  border-right: 1px solid #3F3F3F;
+  border-bottom: 1px solid #3F3F3F; 
+	height: 20px;
+	width: 24px;
+	line-height: 20px;
+	font-family:Arial,Helvetica,sans-serif; 
+  font-size: 11px; 
+	font-weight: 300;
+	color:#3F3F3F;
+}
+
+.seccion-celda-acciones {
+	text-align: right;
+}
+
+.seccion-tabla-acciones {
+	height: 20px;
+}
+
+.link-accion-documento {
+	margin: 0;
+	margin-top: 2px;
+	margin-right: 2px;
+	padding: 0;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+	float: right;
+	
+}
+
+/* ICONOS */
+.icono {
+	margin-top: 2px; 
+	margin-right: 2px; 
+	padding: 0; 
+	height: 18px;
+	width: 18px;
+	cursor: pointer; 
+	float: right;  
+	list-style: none;
+	position: relative; 
+}
+span.ui-icon { 
+	/*float: left; */
+	margin: 0;
+	padding: 0;
+	height: 18px;
+	
+}
+
+/* DOCUMENTO */
+#marco-documento {
+	background-color:#EFEFEF;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	margin-left: 83mm;
+	
+}
+
+/* SALTO */
+.float-sep {
+	clear: both;
+}
+
+/* BOTONES */
+#upload_button {
+	width:120px;
+	height:35px;
+	text-align:center;
+	background-image:url(plugins/uploader/boton.png);
+	color:#CCCCCC;
+	font-weight:bold;
+	padding-top:15px;
+	margin:auto;
+	cursor:pointer;
+}
+#upload_button:hover{
+	color:#FFFFFF;
+}
